@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+        <data>
+                <variable name="result" type="com.example.qthien.week_1.Result"/>
+        </data>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#707070">
+
+
+                <!-- ... rest of layout here -->
+        <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/ytb_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </com.google.android.youtube.player.YouTubePlayerView>
+
+        <TextView
+                android:id="@+id/txtNameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{result.title}'
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+
+        <TextView
+                android:id="@+id/txtReleaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{"ReleaseDate : " + result.releaseDate}'
+                android:textColor="#FFF"/>
+
+        <RatingBar android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   android:stepSize="1.0"
+                   android:rating="@{result.voteAverage}"
+                   android:progressTint="#fff700"
+        android:outlineAmbientShadowColor="#fff700"/>
+
+        <TextView
+                android:id="@+id/txtDecripDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{result.overview}"
+                android:textColor="#FFF"
+                />
+</LinearLayout>
+</layout>

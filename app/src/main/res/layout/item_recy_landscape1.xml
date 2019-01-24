@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/layoutRela1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#363636">
+
+    <FrameLayout
+            android:id="@+id/frmLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/img_port1"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:scaleType="fitXY"/>
+        <ImageView
+                android:id="@+id/imgPlay1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                 android:background="@null"/>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_toRightOf="@id/frmLayout"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:paddingLeft="5dp">
+        <TextView
+                android:id="@+id/txtName_port1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AAAAA"
+                android:textSize="24sp"
+                android:textColor="#FFF"
+        />
+        <TextView
+                android:id="@+id/txtDecrip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fhdjfhdhflskjdhfhjdfshdfljhasdlfjh"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:textColor="#FFF"
+        />
+        <TextView
+                android:id="@+id/txtXemthem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:clickable="true"
+                android:textColor="#a7a7a7"
+                android:layout_gravity="left"/>
+    </LinearLayout>
+
+</RelativeLayout>
