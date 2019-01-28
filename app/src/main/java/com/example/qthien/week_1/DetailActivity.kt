@@ -31,7 +31,7 @@ class DetailActivity : YouTubeBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bind = DataBindingUtil.setContentView(this , R.layout.activity_detail)
-        createPopupWindow()
+        //createPopupWindow()
 
         rDetail = intent.getParcelableExtra<Result>("Result")
 
