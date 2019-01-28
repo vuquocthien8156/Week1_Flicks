@@ -38,9 +38,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/NSV1xdy.gifv' title='Video Walkthrough 1' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/8U7d72R.gifv' title='Video Walkthrough 2' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/3XLLZXa.gifv' title='Video Walkthrough 3' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [AZ Screen Recorder](https://play.google.com/store/apps/details?id=com.hecorat.screenrecorder.free&hl=en).
 
 ## Notes
 
