@@ -38,9 +38,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://i.imgur.com/NSV1xdy.gif" title="Video Walkthrough 1" />
-<img src="https://i.imgur.com/8U7d72R.gif" title="Video Walkthrough 2" />
-<img src="https://i.imgur.com/3XLLZXa.gif" title="Video Walkthrough 3" />
+<a href="https://i.imgur.com/PY3ZDEl.gifv"><img src="https://i.imgur.com/PY3ZDEl.gif" title="Video Walkthrough 1" /></a>
+<a href="https://i.imgur.com/8U7d72R.gifv"><img src="https://i.imgur.com/8U7d72R.gif" title="Video Walkthrough 2" /></a>
+<a href="https://i.imgur.com/3XLLZXa.gifv"><img src="https://i.imgur.com/3XLLZXa.gif" title="Video Walkthrough" 3 /></a>
 
 GIF created with [AZ Screen Recorder](https://play.google.com/store/apps/details?id=com.hecorat.screenrecorder.free&hl=en).
 
