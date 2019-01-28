@@ -12,6 +12,14 @@ import kotlinx.android.synthetic.main.activity_detail.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import com.google.android.youtube.player.internal.y
+import com.google.android.youtube.player.internal.x
+import android.view.Gravity
+import android.R.attr.gravity
+import android.view.WindowManager
+import android.util.DisplayMetrics
+
+
 
 class DetailActivity : YouTubeBaseActivity() {
 
@@ -22,8 +30,8 @@ class DetailActivity : YouTubeBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         bind = DataBindingUtil.setContentView(this , R.layout.activity_detail)
+        createPopupWindow()
 
         rDetail = intent.getParcelableExtra<Result>("Result")
 
@@ -49,6 +57,23 @@ class DetailActivity : YouTubeBaseActivity() {
         } )
 
 
+    }
+
+    private fun createPopupWindow() {
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+
+        val width = displayMetrics.widthPixels
+        val heigth = displayMetrics.heightPixels
+
+        window.setLayout((width * .9).toInt(), (heigth * .8).toInt())
+
+        val par = window.attributes
+        par.gravity = Gravity.BOTTOM
+        par.x = 0
+        par.y = 60
+
+        window.attributes = par
     }
 
     fun LoadVideo(key : String){

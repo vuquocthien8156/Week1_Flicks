@@ -57,7 +57,7 @@
                 android:id="@+id/txtXemthem1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Xem thêm"
+                android:text="Read more"
                 android:clickable="true"
                 android:textColor="#a7a7a7"
                 android:layout_gravity="left"/>

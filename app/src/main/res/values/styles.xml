@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <!-- Customize your theme here. -->
     <item name="colorPrimary">#363636</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,12 +10,18 @@
 
     </style>
 
+    <style name="Searchview" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
     <style name="AppThemeDetail" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:statusBarColor">#363636</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
 </resources>

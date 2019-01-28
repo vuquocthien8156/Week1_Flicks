@@ -18,6 +18,9 @@ import com.bumptech.glide.load.MultiTransformation
 import com.bumptech.glide.request.RequestOptions
 import com.google.android.youtube.player.internal.v
 import jp.wasabeef.glide.transformations.*
+import com.example.qthien.week_1.R.id.recyclerView
+
+
 
 
 class Adapter_Recy(var con : Context ,var l: ArrayList<Result>? ,var ori : Boolean) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -75,6 +78,7 @@ class Adapter_Recy(var con : Context ,var l: ArrayList<Result>? ,var ori : Boole
         return dp * context.resources.displayMetrics.density
     }
 
+
     override fun onBindViewHolder(p0: RecyclerView.ViewHolder, p1: Int) {
         var r : Result? = l?.get(p1)
         var i = Intent(con , DetailActivity::class.java)
@@ -94,14 +98,13 @@ class Adapter_Recy(var con : Context ,var l: ArrayList<Result>? ,var ori : Boole
 
                     var layouuParams = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT , convertDpToPx(con , 220f).toInt())
                     p0.img.layoutParams = layouuParams
-                    GlideApp.with(con).load("http://image.tmdb.org/t/p/w185/${r.backdropPath}")
-                        .apply(RequestOptions.bitmapTransform(CropSquareTransformation()))
+                    GlideApp.with(con).load("http://image.tmdb.org/t/p/w500/${r.backdropPath}")
                         .placeholder(R.drawable.img_place)
                         .into(p0.img)
 
                     p0.imgPlay.visibility = View.VISIBLE
                 }else
-                    GlideApp.with(con).load("http://image.tmdb.org/t/p/w185/${r?.posterPath}")
+                    GlideApp.with(con).load("http://image.tmdb.org/t/p/w500/${r?.posterPath}")
                         .apply(RequestOptions.bitmapTransform(CropCircleTransformation()))
                         .placeholder(R.drawable.img_place)
                         .into(p0.img)
@@ -125,7 +128,7 @@ class Adapter_Recy(var con : Context ,var l: ArrayList<Result>? ,var ori : Boole
                 if(r!!.voteAverage <= 6.5F)
                     p0.imgPlay.visibility = View.GONE
 
-                GlideApp.with(con).load("http://image.tmdb.org/t/p/w185/${r?.backdropPath}")
+                GlideApp.with(con).load("http://image.tmdb.org/t/p/w500/${r?.backdropPath}")
                     .placeholder(R.drawable.img_place)
                     .into(p0.img)
 
